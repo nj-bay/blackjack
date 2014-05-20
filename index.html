@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RocketU Movies</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="assets/css/blackjack.css">
+		<script type="text/javascript" src="assets/js/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="assets/js/modernizr.custom.81121.js"></script>
+		<script type="text/javascript" src="assets/js/mustache.js"></script>		
+		<script type="text/javascript" src="assets/js/blackjack.js"></script>
+	</head>
+	
+	<body>
+	
+		<div id="wrapper">
+
+		
+			<a href="/"><img id="logo" src="assets/images/rocketu-logo-large.png" alt="RocketU logo" title="Go to RocketU home page"></a>
+
+			<p>Hi, thanks for stopping by our blackjack table. Pull up a chair and let's play...</p>
+			
+		
+
+			<div id="card-table">
+
+				<h2>Dealer</h2>
+					<div id="dealer-hand"></div>
+					<div id="status"></div>
+					<div id="player-hand"></div>
+				<h2>Player</h2>
+					<div id="player-options">
+						
+						<input id="btn-new" type="button" value="New Game">
+						<input id="btn-hit" type="button" value="Hit">
+						<input id="btn-stand" type="button" value="Stand">
+
+					</div>
+
+
+
+
+					
+					
+					
+
+
+
+			</div>
+		</div>
+		<script id="tpl-hand" type="text/template">
+		{{#cards}}
+			<img src="assets/images/cards/{{image}}" class="card" > 
+		{{/cards}}
+		{{#back}}
+			<img src="assets/images/cards/back.png" class="card" > 
+		{{/back}}
+
+		</script>
+		}
+
+	</body>
+	
+</html>
